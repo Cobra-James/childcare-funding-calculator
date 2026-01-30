@@ -3,4 +3,7 @@ const { defineConfig } = require('vite');
 
 module.exports = defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: 'all',
+  },
 });
